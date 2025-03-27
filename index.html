@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rail Fence Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Rail Fence Cipher</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="encryptionDiv">
+            <p>*Copy all text before the fullstop</p>
+            <h3>
+                Encrypt Text
+            </h3>
+            <div class="TextDiv">
+                <form>
+                    <div class="cypherText">
+                        <label for="Text">
+                            Enter text
+                        </label>
+                        <input type="text" name="Text" id="Text">
+                    </div>
+                    <div class="cypherTextShift">
+                        <label for="ShiftCode">Enter Key</label>
+                        <input min="0" type="number" name="ShiftCode" id="ShiftCode">
+                    </div>
+                    <button class="btn" id="encryptButton" type="submit">
+                        <p>Encrypt</p>
+                    </button>
+                </form>
+            </div>
+            <div class="resultDiv">
+                <p id="secreteResult"></p>
+            </div>
+        </div>
+    
+        <div class="decryptionDiv">
+            <div class="TextDiv">
+                <h3 style="margin-top: 20px;">
+                    Decrypt Text
+                </h3>
+                <form>
+                    <div class="cypherText">
+                        <label for="Text">
+                            Enter Secret text
+                        </label>
+                        <input type="text" name="Text" id="secretText">
+                    </div>
+                    <div class="cypherTextShift">
+                        <label for="secretShiftCode">Enter Key</label>
+                        <input min="0" type="number" name="secretShiftCode" id="secretShiftCode">
+                    </div>
+                    <button class="btn" id="decryptButton" type="submit">
+                        <p>Decrypt</p>
+                    </button>
+                </form>
+            </div>
+            <div class="resultDiv">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
